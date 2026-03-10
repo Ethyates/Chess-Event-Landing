@@ -1,0 +1,177 @@
+:root{
+
+--max:60rem;
+
+--space-1:0.5rem;
+--space-2:1rem;
+--space-3:2rem;
+
+--bg:#ffffff;
+--text:#111111;
+--muted:#555555;
+
+--border:#e5e5e5;
+
+--btn:#2c3e50;
+--btn-hover:#1a252f;
+
+}
+
+/* base */
+
+body{
+font-family:Arial,sans-serif;
+font-size:1rem;
+line-height:1.6;
+margin:0;
+background:var(--bg);
+color:var(--text);
+}
+
+h1{font-size:2rem;}
+h2{font-size:1.5rem;}
+h3{font-size:1.25rem;}
+
+.container{
+max-width:var(--max);
+margin:auto;
+padding:var(--space-3);
+}
+
+.stack{
+display:flex;
+flex-direction:column;
+gap:var(--space-2);
+}
+
+.muted{
+color:var(--muted);
+}
+
+/* navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.nav-links{
+display:flex;
+gap:var(--space-2);
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.nav-links a{
+text-decoration:none;
+color:var(--text);
+}
+
+/* hero */
+
+.hero{
+display:flex;
+flex-direction:column;
+gap:var(--space-2);
+}
+
+/* buttons */
+
+.btn{
+background:var(--btn);
+color:white;
+padding:var(--space-2);
+text-decoration:none;
+border-radius:4px;
+display:inline-block;
+}
+
+.btn:hover{
+background:var(--btn-hover);
+}
+
+/* schedule */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid var(--border);
+padding:var(--space-1);
+text-align:left;
+}
+
+/* contestants grid */
+
+.contestant-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:var(--space-2);
+}
+
+.card{
+border:1px solid var(--border);
+padding:var(--space-2);
+border-radius:6px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+max-width:200px;
+margin:auto;
+display:block;
+}
+
+/* faq */
+
+.faq-item{
+border-bottom:1px solid var(--border);
+padding-bottom:var(--space-2);
+}
+
+/* footer */
+
+footer{
+border-top:1px solid var(--border);
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:var(--space-2);
+}
+
+footer ul{
+list-style:none;
+padding:0;
+}
+
+footer a{
+text-decoration:none;
+color:var(--text);
+}
+
+/* breakpoint */
+
+@media (min-width:768px){
+
+.hero{
+flex-direction:row;
+align-items:center;
+}
+
+.contestant-grid{
+grid-template-columns:repeat(4,1fr);
+}
+
+.footer-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
