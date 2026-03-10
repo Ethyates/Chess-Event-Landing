@@ -53,7 +53,7 @@ The site uses a simple design system including:
 
 GitHub Pages link:
 
-[https://your-github-pages-link-here](https://ethyates.github.io/Chess-Event-Landing/)
+[GitHub Pages link](https://ethyates.github.io/Chess-Event-Landing/)
 
 ---
 
@@ -61,7 +61,7 @@ GitHub Pages link:
 
 GitHub repository link:
 
-[https://github.com/Ethyates/Chess-Event-Landing/](https://github.com/Ethyates/Chess-Event-Landing)
+[GitHub repository link](https://github.com/Ethyates/Chess-Event-Landing)
 
 ---
 
